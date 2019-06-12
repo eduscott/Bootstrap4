@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>BOOTSTRAP - Eduardo Scott</title>
+</head>
+<body>
+	<header class="bar text-center">Bootstrap - Como utilizar?</header>
+	<br>
+	<div class="container">
+      <h2 class="text-center">Alertas (Alerts)</h2>
+      <p class="paragraph">
+      	Fornecem mensagens de feedback contextuais para ações típicas do usuário com um punhado de mensagens de alerta disponíveis e flexíveis. Possuem diversas cores para serem atribuidas a determinadas situações, podemos usar o "warning" que possui uma coloração amarelo-alaranjado para avisar o usuario sobre determinada situação.
+      </p>
+      <h5 class="text-center">Alertas</h5>
+      <div class="example-block">
+        <div class="example">
+          <div class="alert alert-primary" role="alert">Este é um alerta primário!</div>
+          <div class="alert alert-secondary" role="alert">Este é um alerta secundário!</div>
+          <div class="alert alert-success" role="alert">Este é um alerta de sucesso!</div>
+          <div class="alert alert-danger" role="alert">Este é um alerta de perigo!</div>
+          <div class="alert alert-warning" role="alert">Este é um alerta de "aviso"!</div>
+          <div class="alert alert-info" role="alert">Este é um alerta de informação!</div>
+          <div class="alert alert-light" role="alert">Este é um alerta claro!</div>
+          <div class="alert alert-dark" role="alert">Este é um alerta escuro!</div>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-primary"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta primário!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-secondary"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta secundário!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-success"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta de sucesso
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-danger"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta de perigo!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-warning"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta de "aviso"!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-info"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta de informação!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-light"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta claro!
+            <span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"alert alert-dark"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;strong</span><span class="tag">&gt;</span>Este é um alerta escuro!
+            <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+  <div class="container">
+    <h2 class="text-center">Botões (Buttons)</h2>
+    <p class="paragraph">
+      Use os estilos de botão personalizados do Bootstrap para ações em formulários, diálogos e muito mais, com suporte para vários tamanhos, estados e muito mais. O Bootstrap inclui vários estilos de botões pré-definidos, cada um com sua própria finalidade semântica, com alguns extras adicionados para maior controle.
+    </p>
+    <div class="example-block">
+      <div class="example">
+        <button type="button" class="btn btn-primary">Primário</button>
+        <button type="button" class="btn btn-secondary">Secundário</button>
+        <button type="button" class="btn btn-success">Sucesso</button>
+        <button type="button" class="btn btn-danger">Perigo</button>
+        <button type="button" class="btn btn-warning">Cuidado</button>
+        <button type="button" class="btn btn-info">Informação</button>
+        <button type="button" class="btn btn-light">Claro</button>
+        <button type="button" class="btn btn-dark">Escuro</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+      <div class="code">
+        <code data-lang="html">
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span>Primário<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-secondary"</span><span class="tag">&gt;</span>Secundário<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-success"</span><span class="tag">&gt;</span>Sucesso<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-danger"</span><span class="tag">&gt;</span>Perigo<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-warning"</span><span class="tag">&gt;</span>Cuidado<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-info"</span><span class="tag">&gt;</span>Informação<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-light"</span><span class="tag">&gt;</span>Claro<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-dark"</span><span class="tag">&gt;</span>Escuro<span class="tag">&lt;/button&gt;</span><br>
+          <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-link"</span><span class="tag">&gt;</span>Link<span class="tag">&lt;/button&gt;</span><br>
+        </code>
+      </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+    	<h5 class="text-center">Botão com contorno</h5>
+    	<p class="paragraph">
+    		Quer um botão, mas sem as cores de fundo? Substitua as classes modificadoras padrão por .btn-outline- * para remover todas as imagens e cores de fundo de qualquer botão.
+    	</p>
+      <div class="example-block">
+        <div class="example">
+        	<button type="button" class="btn btn-outline-primary">Primário</button>
+        	<button type="button" class="btn btn-outline-secondary">Secundário</button>
+        	<button type="button" class="btn btn-outline-success">Sucesso</button>
+        	<button type="button" class="btn btn-outline-danger">Perigo</button>
+        	<button type="button" class="btn btn-outline-warning">Aviso</button>
+        	<button type="button" class="btn btn-outline-info">Informação</button>
+        	<button type="button" class="btn btn-outline-light">Claro</button>
+        	<button type="button" class="btn btn-outline-dark">Escuro</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-primary"</span><span class="tag">&gt;</span>Primário<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-secondary"</span><span class="tag">&gt;</span>Secundário<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-sucess"</span><span class="tag">&gt;</span>Sucesso<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-danger"</span><span class="tag">&gt;</span>Perigo<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-warning"</span><span class="tag">&gt;</span>Aviso<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-info"</span><span class="tag">&gt;</span>Informação<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-light"</span><span class="tag">&gt;</span>Claro<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-outline-dark"</span><span class="tag">&gt;</span>Escuro<span class="tag">&lt;/button&gt;</span><br>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h5 class="text-center">Botões com diferentes tamanhos</h5>
+      <p class="paragraph">
+        Existem diferentes tamanhos de botões que você pode utilizar, temos o botão grande que para ser utilizado você deve declarar o valor ".btn-lg" "lg" vem do inglês "large" que significa grande. Temos o botão com o tamanho padrão que não é necessario declarar nada. Temos o botão pequeno que para ser utilizado deve ser declarado o valor ".btn-sm" "sm" vem do inglês "small" que significa pequeno, e temos o botão largo que para ser utilizado deve-se declarar o valor ".btn-block". O botão com largura total ocupa uma linha inteira da tela.
+      </p>
+      <h6 class="text-center">Botão Grande</h6>
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary btn-lg">Botão Grande</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary btn-lg"</span><span class="tag">&gt;</span>Botão Grande<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h6 class="text-center">Botão Padrão</h6>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary">Botão Padrão</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span>Botão Padrão<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h6 class="text-center">Botão Pequeno</h6>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary btn-sm">Botão Pequeno</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary btn-sm"</span><span class="tag">&gt;</span>Botão Pequeno<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h6 class="text-center">Botão Largo</h6>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary btn-block">Botão Largo</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary btn-block"</span><span class="tag">&gt;</span>Botão Largo<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h6 class="text-center">Botão Ativo</h6>
+      <p class="paragraph">
+        Os botões aparecerão pressionados (com um fundo mais escuro, borda mais escura e sombra inserida) quando ativos. Não é necessario adicionar nada ao codigo pois eles já vem com a função ativa por padrão.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary">Botão Ativo</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span>Botão Ativo<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+        <h6 class="text-center">Botão Desativado</h6>
+      <p class="paragraph">
+        Faz o botão parecer inativo adicionando o atributo booleano "disable" a qualquer elemento "button".
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary" disabled="">Botão Desativado</button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span> <span class="property">disabled</span><span class="tag">&gt;</span>Botão Desativado<span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h6 class="text-center">Botão com Spinner</h6>
+      <p class="paragraph">
+        Para que o botão possua um spinner, é necessário declarar uma classe própria para isso, cujo está representada logo abaixo. Note que trata-se de um spinner pequeno, por isso temos aquela mesma declaração "sm", vista anteriormente.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <button type="button" class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Carregando...
+          </button>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;span</span> <span class="property">class=</span><span class="value">"spinner-border spinner-border-sm"</span><span class="tag">&lt;/span&gt;</span><br>
+              &nbsp;&nbsp;Carregando...<br>
+            <span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h2 class="text-center">Carrossel (Carousel)</h2>
+      <p class="paragraph">
+        O carrossel é uma apresentação de slides para percorrer uma série de conteúdo, construída com transformações CSS 3D e um pouco de JavaScript. Ele funciona com uma série de imagens, texto ou marcação personalizada. Também inclui suporte para controles e indicadores anteriores/futuros.
+      </p>
+      <h5 class="text-center">Com controle e indicador</h5>
+      <p class="paragraph">
+        Aqui está um carrossel com controle e indicador de imagem. Observe a presença do .d-block e do fluido -img nas imagens do carrossel para impedir o alinhamento da imagem padrão do navegador.
+      </p>
+      <p class="paragraph">
+        A classe .active precisa ser usada em um dos slides, caso contrário,
+        o carrossel não ficará visível. Também, se assegure de definir um único
+        ID no .carousel para os controles opcionais, especialmente, se você está
+        usando múltiplos carousels em uma página. Elementos de controle e
+        indicador devem ter um atributo data-target (ou links href) que combinam
+        com o ID do elemento .carousel.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.wallpapersrc.com/img/1e7cadbcbe264efeba689fa314feb2cf/tesla-model-x-p90d-4096x2160.jpg" alt="Tesla X - P90D" style="width:100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://wpmisc.com/sites/default/files/wallpaper/vehicles/75509/chevrolet-suburban-hd-wallpapers-75509-2348001.png" alt="Chevrolet Suburban" style="width:100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images3.alphacoders.com/709/709730.jpg" alt="Volkswagen Golf GTI" style="width:100%;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;div</span> <span class="property">id=</span><span class="value">"carousel"</span> <span class="property">class=</span><span class="value">"carousel slide"</span> <span class="property">data-ride=</span><span class="value">"carousel"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;ol</span> <span class="property">id=</span><span class="value">"carousel-indicators"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; <span class="tag">&lt;li</span> <span class="property">data-target=</span><span class="value">"#carousel"</span> <span class="property">data-slide-to=</span><span class="value">"0"</span> <span class="property">class=</span><span class="value">"active"</span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; <span class="tag">&lt;li</span> <span class="property">data-target=</span><span class="value">"#carousel"</span> <span class="property">data-slide-to=</span><span class="value">"1"</span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; <span class="tag">&lt;li</span> <span class="property">data-target=</span><span class="value">"#carousel"</span> <span class="property">data-slide-to=</span><span class="value">"2"</span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/ol&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"carousel-inner"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"carousel-item active"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;img</span> <span class="property">scr=</span><span class="value">"https://www.wallpapersrc.com/img/1e7cadbcbe264efeba689fa314feb2cf/tesla-model-x-p90d-4096x2160.jpg"</span> <span class="property">alt=</span><span class="value">"Tesla X - P90D"</span> <span class="property">style=</span><span class="value">"width: 100%;"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"carousel-item"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;img</span> <span class="property">scr=</span><span class="value">"https://wpmisc.com/sites/default/files/wallpaper/vehicles/75509/chevrolet-suburban-hd-wallpapers-75509-2348001.png"</span> <span class="property">alt=</span><span class="value">"Chevrolet Suburban"</span> <span class="property">style=</span><span class="value">"width: 100%;"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"carousel-item"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;img</span> <span class="property">scr=</span><span class="value">"https://images3.alphacoders.com/709/709730.jpg"</span> <span class="property">alt=</span><span class="value">"Volkswagen Golf GTI"</span> <span class="property">style=</span><span class="value">"width: 100%;"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"carousel-control-"</span> <span class="property">href=</span><span class="value">"#carousel"</span> <span class="property">data-slide=</span><span class="value">"prev"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;span</span> <span class="property">class=</span><span class="value">"carousel-control-prev-icon"</span><span class="tag">&gt;</span><span class="tag">&lt;/span&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/a&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"carousel-control-"</span> <span class="property">href=</span><span class="value">"#carousel"</span> <span class="property">data-slide=</span><span class="value">"next"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;span</span> <span class="property">class=</span><span class="value">"carousel-control-next-icon"</span><span class="tag">&gt;</span><span class="tag">&lt;/span&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/a&gt;</span><br>
+            <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h2 class="text-center">Grade (Grid)</h2>
+      <p class="paragraph">
+        O sistema de grade do Bootstrap usa uma série de contêiners, linhas e colunas para layout e alinhamento do conteúdo. É construído com flexbox e é totalmente responsivo.
+      </p>
+      <h5 class="text-center">Grade com trêvalue colunas iguais</h5>
+      <p class="paragraph">
+        Este grid é um modelo simples e em seu código temos: row (elementos para
+        envolver colunas), col-sm-4 ("col" se refere a "coluna", "sm"(small) ao
+        seu tamanho e "4" a sua largura) e background-color (cor de fundo das
+        colunas). Vale ressaltar que o "4" está nas trêvalue colunas para que elas tenham o mesmo tamanho, mas isso não é obrigatório.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <div class="row">
+            <div class="col-sm-4" style="background-color: lightblue;">Coluna 1</div>
+            <div class="col-sm-4" style="background-color: red;">Coluna 2</div>
+            <div class="col-sm-4" style="background-color: purple;">Coluna 3</div>
+          </div>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"row"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"col-sm-4"</span> <span class="property">style=</span><span class="value">"background-color: lightblue;"</span><span class="tag">&gt;</span>Coluna 1<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"col-sm-4"</span> <span class="property">style=</span><span class="value">"background-color: red;"</span><span class="tag">&gt;</span>Coluna 2<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"col-sm-4"</span> <span class="property">style=</span><span class="value">"background-color: purple;"</span><span class="tag">&gt;</span>Coluna 3<span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;/div&gt;</span><br>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2 class="text-center">Input</h2>
+      <p class="paragraph">
+        O Input é usado para criar controles interativos para formulários com
+        intuito de receber dados do usuário. A seguir, veremos dois exemplos
+        desse componente do Bootstrap.
+      </p>
+      <h5 class="text-center">Login</h5>
+      <p class="paragraph">
+        Esse exemplo de input é de uma tela de Login onde o usuário digita seu
+        endereço de email e senha. E, logo em seguida temos um botão que possui
+        a característica "submit" que serve para executar uma ação. Porém, ele
+        não está ligado a nenhuma outra página ou recurso para que o mesmo
+        funcione, logo, ao apertar em "Entrar" dará erro por esse motivo,
+        servindo, assim, apenas para ser visualizado.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="usr">Usuário:</label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Senha:</label>
+              <input type="password" class="form-control" id="pwd" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </form>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;form</span> <span class="property">action=</span><span class="value">"/action_page.php"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"form-group"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;label</span> <span class="property">for=</span><span class="value">"usr"</span><span class="tag">&gt;</span>Usuário:<span class="tag">&lt;/label&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="property">type=</span><span class="value">"text"</span> <span class="property">class=</span><span class="value">"form-control"</span> <span class="property">id=</span><span class="value">"usr"</span> <span class="property">name=</span><span class="value">"username"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"form-group"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;label</span> <span class="property">for=</span><span class="value">"pwd"</span><span class="tag">&gt;</span>Senha:<span class="tag">&lt;/label&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;input</span> <span class="property">type=</span><span class="value">"password"</span> <span class="property">class=</span><span class="value">"form-control"</span> <span class="property">id=</span><span class="value">"pwd"</span> <span class="property">name=</span><span class="value">"password"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"submit"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span>Entrar<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;/form&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+      <h5 class="text-center">Caixa de Texto</h5>
+      <p class="paragraph">
+        Esse exemplo de input trata-se de uma caixa de comentário. Com o botão
+        de "Feito" ocorre o mesmo que com o botão do exemplo acima, portanto,
+        servindo apenas para visualização.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="comment">Comente:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+          </form>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;form</span> <span class="property">action=</span><span class="value">"/action_page.php"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"form-group"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;label</span> <span class="property">for=</span><span class="value">"comment"</span><span class="tag">&gt;</span>Comente:<span class="tag">&lt;/label&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;textarea</span> <span class="property">class=</span><span class="value">"form-control"</span> <span class="property">rows=</span><span class="value">"5"</span> <span class="property">id=</span><span class="value">"comment"</span> <span class="property">name=</span><span class="value">"text"</span><span class="tag">&gt;</span><span class="tag">&lt;/textarea&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;button</span> <span class="property">type=</span><span class="value">"submit"</span> <span class="property">class=</span><span class="value">"btn btn-primary"</span><span class="tag">&gt;</span>Comentar<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;/form&gt;</span>
+          </code>
+        </div>
+      </div>
+      <br>
+    <h2 class="text-center">Navbar</h2>
+    <p class="paragraph">
+    	Os links de navegação da Navbar baseiam-se em nossas opções <code>.nav</code> com sua própria classe de modificadores e exigem o uso de classes toggler para um estilo responsivo adequado. A navegação nas navbars também aumentará para ocupar o máximo de espaço horizontal possível para manter o conteúdo da barra de navegação alinhado de forma segura.
+    </p>
+    <p class="paragraph">
+        Estados ativos - com <code>.active</code> - para indicar a página atual
+        podem ser aplicados diretamente a <code>.nav-links</code> ou a seus pais
+        imediatos <code>.nav-item</code>.
+    </p>
+    <div class="example-block">
+    	<div class="example">
+    		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    			<a class="navbar-brand" href="#">Navbar</a>
+    			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+    			</button>
+    			<div class="collapse navbar-collapse" id="navbarNav">
+    				<ul class="navbar-nav">
+    					<li class="nav-item active">
+    						<a class="nav-link" href="#">Página Inicial <span class="sr-only">(current)</span></a>
+    					</li>
+    					<li class="nav-item">
+    						<a class="nav-link" href="#">Configurações</a>
+    					</li>
+    					<li class="nav-item">
+    						<a class="nav-link" href="#">Sobre</a>
+    					</li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;nav</span> <span class="property">class=</span><span class="value">"navbar navbar-expand-lg navbar-dark bg-dark"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"navbar-brand"</span> <span class="property">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Navbar<span class="tag">&lt;/a&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;button</span> <span class="property">class=</span><span class="value">"navbar-toggler"</span> <span class="property">type=</span><span class="value">"button"</span> <span class="property">data-toggle=</span><span class="value">"collapse"</span> <span class="property">data-target=</span><span class="value">"#navbarNav"</span> <span class="property">aria-controls=</span><span class="value">"navbarNav"</span> <span class="property">aria-expanded=</span><span class="value">"false"</span> <span class="property">aria-label=</span><span class="value">"Toggle navigation"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;span</span> <span class="property">class=</span><span class="value">"navbar-toggler-icon"</span><span class="tag">&gt;&lt;/span&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="property">class=</span><span class="value">"collapse navbar-collapse"</span> <span class="property">id=</span><span class="value">"navbarNav"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;ul</span> <span class="property">class=</span><span class="value">"navbar-nav"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;li</span> <span class="property">class=</span><span class="value">"nav-item active"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"nav-link"</span> <span class="property">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Página Inicial<span class="tag">&lt;span</span> <span class="property">class=</span><span class="value">"sr-only"</span><span class="tag">&gt;</span>(current)<span class="tag">&lt;/span&gt;&lt;/a&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;li</span> <span class="property">class=</span><span class="value">"nav-item"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"nav-link"</span> <span class="property">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Configurações<span class="tag">&lt;/a&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;li</span> <span class="property">class=</span><span class="value">"nav-item"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"nav-link"</span> <span class="property">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Sobre<span class="tag">&lt;/a&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;li</span> <span class="property">class=</span><span class="value">"nav-item"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="property">class=</span><span class="value">"nav-link disabled"</span> <span class="property">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Desativado<span class="tag">&lt;/a&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/ul&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;/nav&gt;</span><br>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h2 class="text-center">Tabelas</h2>
+      <p class="paragraph">
+        A tabela serve para imprimir informações property tela, onde se é usada a
+        classe própria para tabela (class="table"). A tag "th" serve para
+        definir o que será o cabeçalho da tabela. Uma tabela é dividida em
+        linhas com a tag "tr" e cada linha é dividida em células de dados com a
+        tag "td" (significa "table data") que é o conteúdo de uma célula de
+        dados. A tag "tbody" define o corpo de dados de uma tabela. O uso de
+        TBODY é obrigatório sempre que utilizamos THEAD ou TFOOT. Sua omissão
+        valueó é permitida quando não forem definidos os cabeçalhos e os rodapévalue,
+        e apenas existir um corpo de dados.
+      </p>
+      <h5 class="text-center">Tabela Básica</h5>
+      <p class="paragraph">
+        Nesse caso de tabela, está contido informações sobre pessoas com um
+        formato de lista.
+      </p>
+      <div class="example-block">
+        <div class="example">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Edison Camilo</td>
+                <td>de Moraes</td>
+                <td>edisonmoraes@hotmail.com </td>
+              </tr>
+              <tr>
+                <td>Fabrisia</td>
+                <td>Ferreira</td>
+                <td>fabrisia.araujo@gmail.com </td>
+              </tr>
+              <tr>
+                <td>Flavio</td>
+                <td>Medeiros</td>
+                <td>flavio.medeiros@ifal.edu.br </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="code">
+          <code data-lang="html">
+            <span class="tag">&lt;table</span> <span class="property">class=</span><span class="value">"table"</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;thead</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;tr</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Nome<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Sobrenome<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Email<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/tr&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/thead&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;tbody</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;tr</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Edison Camilo<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>de Moraes<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>edisonmoraes@hotmail.com<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/tr&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;tr</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Fabrisia<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Ferreira<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>fabrisia.araujo@gmail.com<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/tr&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;tr</span><span class="tag">&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Flavio<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>Medeiros<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;td</span><span class="tag">&gt;</span>flavio.medeiros@ifal.edu.br<span class="tag">&lt;/td&gt;</span><br>
+              &nbsp;&nbsp; &nbsp;&nbsp;<span class="tag">&lt;/tr&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;/tbody&gt;</span><br>
+            <span class="tag">&lt;/table&gt;</span>
+          </code>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="conta">
+    <footer class="bar text-center">
+    	Eduardo Costa Scott - 914-A
+    </footer>
+</body>
+</html>
